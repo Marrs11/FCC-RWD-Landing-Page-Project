@@ -1,0 +1,259 @@
+/*===========================================================================
+BASIC STYLES
+* ===========================================================================*/
+
+body{
+    background-image: url("https://res.cloudinary.com/marrs11/image/upload/v1531922880/FCC%20Projects/FCC:%20Landing%20Page/backgrounds/footer_lodyas.png");
+}
+
+/*===========================================================================
+NAV BAR SECTION
+* ===========================================================================*/
+
+.navbar{
+    border-bottom: 3px solid #DC3545;
+    background-color: #212529 !important;
+}
+
+.navbar ul{
+    margin: auto;
+}
+
+.navbar ul li a{
+    transition: 0.4s;
+}
+
+.navbar ul li a:hover{
+    color: #DC3545 !important;
+    transition: 0.4s;
+}
+
+.navbar-brand{
+    width: 302px;
+}
+
+#home-section{
+    height: 100vh;
+}
+
+/*===========================================================================
+HOME SECTION
+* ===========================================================================*/
+
+#hero-heading{
+    text-transform: uppercase;
+    font-weight: 100;
+    color: rgba(0, 0, 0, .3);
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+
+#hero-heading:before{
+    content: attr(data-text);
+    position: absolute;
+    overflow: hidden;
+    white-space: nowrap;
+    max-width: 20em;
+    color: #DC3545;
+    animation: loading 8s linear;
+}
+
+@keyframes loading {
+    0% {
+        max-width: 0;
+    }
+}
+
+.carousel{
+    margin-top: 250px;
+}
+
+.carousel-indicators{
+    bottom: -50px;
+}
+.carousel-control-prev::after, .carousel-control-next::after{
+    fill: #DC3545;
+}
+
+/*===========================================================================
+FEATURES SECTION
+* ===========================================================================*/
+
+#features-section{
+    height: 100vh;
+    background-color: #e9e9e9;
+    width: 100%;
+}
+
+.col-2{
+    margin: auto;
+}
+
+#features-heading{
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #1d2124;
+    font-size: 3rem;
+    text-align: center;
+    position: relative;
+    top: 150px;
+}
+
+.features-cards{
+    margin-top: 250px;
+}
+
+.features-cards .card-img-top{
+
+}
+
+.card-body p{
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+}
+
+/*===========================================================================
+TECH SPECS SECTION
+* ===========================================================================*/
+
+#specs-heading{
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #f7f7f7;
+    font-size: 3rem;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.table{
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.panel{
+    border-radius: .25rem;
+}
+
+.table td{
+    border: 1px solid #1d2124;
+}
+
+.table td:first-of-type{
+    background-color: #DC3545;
+}
+
+/*===========================================================================
+SHOWCASE SECTION
+* ===========================================================================*/
+
+#showcase-section{
+    background-color: #212529;
+    min-height: 100vh;
+}
+
+#showcase-heading{
+    text-transform: uppercase;
+    font-weight: 100;
+    color: #f7f7f7;
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+#video{
+    margin: 0 auto;
+    position: relative;
+    top: 50px;
+    display: block;
+    border:  2px solid #DC3545;
+}
+
+/*===========================================================================
+FOOTER SECTION
+* ===========================================================================*/
+
+footer{
+    height: 25vh;
+    color: #DC3545;
+}
+
+.footer-list{
+    position: relative;
+    top: 90px;
+    width: 200px;
+}
+
+.footer-list-item{
+    list-style: none;
+    display: block;
+    text-transform: uppercase;
+    padding: 15px 0  0 40px;
+}
+
+.footer-list-item a,
+.footer-list-item a:visited{
+    color: #DC3545;
+    text-decoration: none;
+}
+
+.footer-list-item a:hover{
+    color: #f7f7f7;
+}
+
+footer h4{
+    color: #e9e9e9;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    float: right;
+    padding-right: 18px;
+}
+
+footer h5{
+    color: #e9e9e9;
+    font-weight: lighter;
+    font-size: 1.2rem;
+    padding: auto;
+    margin: 120px auto 30px auto;
+}
+
+.social-footer-list{
+    display: flex;
+    flex-direction: row;
+    float: right;
+    clear: both;
+}
+
+.social-footer-list:before,
+.social-footer-list::after{
+    clear: both;
+}
+
+.social-list-item{
+    padding-left: 20px;
+    padding-right: 20px;
+    list-style: none;
+    font-size: 2.1rem;
+}
+
+.social-list-item .fa-facebook-square:hover{
+    color: #4267B2;
+}
+.social-list-item .fa-twitter-square:hover{
+    color: #1DA1F2;
+}
+.social-list-item .fa-google-plus-square:hover{
+    color: #DD5044;
+}
+.social-list-item .fa-reddit-square:hover{
+    color: #FF4500;
+}
+
+.social-list-item a,
+.social-list-item a:visited
+{
+    color: #DC3545;
+}
